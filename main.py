@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, render_template
+from flask import Flask, request, redirect, render_template, url_for
 import cgi
 import os
 
@@ -37,9 +37,6 @@ def validate_form():
         return redirect('/welcome?username={0}'.format(username))
     else:
         return render_template('index.html', username_error=username_error, password_error=password_error, verify_error=verify_error, email_error = email_error, username=username, email=email, title = "SHINee World Signup")
-
-
-
 
 
 @app.route("/welcome")
