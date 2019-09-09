@@ -25,13 +25,13 @@ def validate_form():
     #if not username or len(username) < 3 or len(username) > 20 or " " in username:
     if not re.match(r"^\w{3,20}$", username):
         username_error = "That's not a valid username"
-        username = '' #   
+        username = ''  
     #if not password or len(password) < 3 or len(password) > 20 or " " in password:
     if not re.match(r"^\w{3,20}$", password):
         password_error = "That's not a valid password"
     if not verify or verify != password:
         verify_error = "Passwords don't match"
-    if email: #  .{3,20} and  \w+@\w+\.\w+
+    if email: 
         #if '@' not in email or '.' not in email or len(email) < 3 or len(email) > 20 or " " in email:
         if not (re.match(r"^.{3,20}$", email) and re.match(r"^\w+@\w+\.\w+$", email)):    
             email_error = "That's not a valid email"
