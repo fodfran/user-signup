@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-color: darkturquoise;
+    color: black;
+    font-family: fantasy;
+    padding-top: 150px;
+}
+h1{
+    font-weight:bolder;
+}
+img{
+    width: 30%;
+    border: 2px solid black;
+}
+form{
+    background-color: black;
+    color: darkturquoise;
+    display: inline-block;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.error {
+    color: red;
+}
+input{
+    border: 2px solid darkturquoise;
+}
+
+input[type=submit]{
+    color: white;
+    background: darkturquoise;
+    border: 2px solid white;
+    border-radius: 10px;
+}
